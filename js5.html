@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+        margin: 0;
+    }
+    header{
+        height: 100vh;
+        background-image: url('https://images.unsplash.com/photo-1488630228244-bcdf33562a43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3JjaGVzdHJhfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0px -50px;
+    }
+    #heading{
+        color: white;
+        width: 50%;
+        display: block;
+        position: absolute;
+        top:20%;
+    }
+    .icons{
+        width:50px;
+        border: 3px solid black;
+        box-shadow: 0px 0px 10px rgb(90, 89, 89);
+        padding: 24px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .icons > h1{
+        color: rgb(255,255,255);
+    }
+    .icons > span{
+        color: yellow;
+    }
+    #backGround-image{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+    @media (max-width:600px) {
+        #backGround-image{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        height: 100vh;
+        align-items: center;
+    }
+    header{
+        height: 100vh;
+        background-image: url('https://images.unsplash.com/photo-1488630228244-bcdf33562a43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3JjaGVzdHJhfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0px 0px;
+    }
+    #heading{
+        color: white;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top:30%;
+        text-align: center;
+    }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="backGround-image">
+            <div id="heading">
+                <h1>Press The Following Keys For Drums Sounds</h1>
+            </div>
+            <div id="A" class="icons">
+               <h1>A</h1> 
+               <span>CLAP</span>
+               <audio id="clap" controls style="display: none;">
+                   <source src="audio-1\clap.wav" type="audio/wav">
+               </audio>
+            </div>
+            <div id="S" class="icons">
+                <h1>S</h1> 
+               <span>HitHat</span>
+               <audio id="hithat" controls style="display: none;">
+                    <source src="audio-1\hihat.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div id="D" class="icons">
+                <h1>D</h1> 
+               <span>Kick</span>
+               <audio id="kick" controls style="display: none;">
+                    <source src="audio-1\kick.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div id="F" class="icons">
+                <h1>F</h1> 
+               <span>OpenHat</span>
+               <audio id="openhat" controls style="display: none;">
+                    <source src="audio-1\openhat.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div id="G" class="icons">
+                <h1>G</h1> 
+               <span>Boom</span>
+               <audio id="boom" controls style="display: none;">
+                    <source src="audio-1\boom.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div id="H" class="icons">
+                <h1>H</h1> 
+               <span>Ride</span>
+               <audio id="ride" controls style="display: none;">
+                    <source src="audio-1\ride.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div id="J" class="icons">
+                <h1>J</h1> 
+               <span>Snare</span>
+               <audio id="snare" controls style="display: none;">
+                    <source src="audio-1\snare.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div id="K" class="icons">
+                <h1>K</h1> 
+               <span>Tom</span>
+               <audio id="tom" controls style="display: none;">
+                    <source src="audio-1\tom.wav" type="audio/wav">
+                </audio>
+            </div>
+            <div id="L" class="icons">
+                <h1>L</h1> 
+               <span>Tink</span>
+               <audio id="tink" controls style="display: none;">
+                    <source src="audio-1\tink.wav" type="audio/wav">
+                </audio>
+            </div>
+        </div>
+    </header>
+    <script src="javascript5.js"></script>
+</body>
+</html>
